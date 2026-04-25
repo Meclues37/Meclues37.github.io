@@ -378,12 +378,13 @@ footer {
 .cancun-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 22px;
 }
 
 .cancun-gallery img {
   width: 100%;
-  height: auto;
+  height: 340px;
+  object-fit: cover;
   display: block;
   border: 1px solid #2a2a2a;
 }
@@ -391,6 +392,10 @@ footer {
 @media (max-width: 850px) {
   .cancun-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .cancun-gallery img {
+    height: 260px;
   }
 }
 .place-card a,
