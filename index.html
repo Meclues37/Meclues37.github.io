@@ -1,14 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Photography Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yisen Xiong Photography</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <header class="navbar">
+    <div class="logo">YX</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#featured">Featured</a>
+      <a href="#places">Places</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
 
-<h1>Welcome to My Portfolio</h1>
-<p>Travel • Photography • Stories</p>
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="small-title">Travel Photography Portfolio</p>
+      <h1>Quiet Moments From Places I’ve Wandered</h1>
+      <p class="hero-text">
+        A visual journal of landscapes, cities, roads, and memories captured through my lens.
+      </p>
+      <a href="#places" class="button">Explore Places</a>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <section class="section" id="featured">
+    <div class="section-title">
+      <p>Selected Work</p>
+      <h2>Featured Moments</h2>
+    </div>
+
+    <div class="featured-grid">
+      <div class="photo-card large">
+        <img src="images/featured1.jpg" alt="Featured travel photo">
+        <div class="card-text">
+          <h3>Mountain Light</h3>
+          <p>Soft light over a quiet landscape.</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/featured2.jpg" alt="Featured travel photo">
+        <div class="card-text">
+          <h3>City Night</h3>
+          <p>Reflections, streets, and evening color.</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/featured3.jpg" alt="Featured travel photo">
+        <div class="card-text">
+          <h3>On the Road</h3>
+          <p>Small moments during long journeys.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark" id="places">
+    <div class="section-title">
+      <p>Catalog</p>
+      <h2>Places</h2>
+    </div>
+
+    <div class="places-grid">
+      <div class="place-card">
+        <img src="images/japan.jpg" alt="Japan">
+        <div>
+          <h3>Japan</h3>
+          <p>Snow, streets, temples, and quiet details.</p>
+        </div>
+      </div>
+
+      <div class="place-card">
+        <img src="images/newyork.jpg" alt="New York">
+        <div>
+          <h3>New York</h3>
+          <p>Urban rhythm, night light, and city texture.</p>
+        </div>
+      </div>
+
+      <div class="place-card">
+        <img src="images/iceland.jpg" alt="Iceland">
+        <div>
+          <h3>Iceland</h3>
+          <p>Ice, wind, mountains, and open roads.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="about-text">
+      <p class="small-title">About</p>
+      <h2>Behind the Camera</h2>
+      <p>
+        I’m interested in travel, landscapes, city scenes, and the quiet details that make a place memorable.
+        This website is a personal catalog of my favorite moments from different places.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Yisen Xiong Photography</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
