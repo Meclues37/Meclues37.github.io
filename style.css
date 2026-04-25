@@ -393,3 +393,12 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.place-card a,
+.place-card a:link,
+.place-card a:visited,
+.place-card a:hover,
+.place-card a:active {
+  color: #f5f1ea !important;
+  text-decoration: none !important;
+  display: block;
+}
