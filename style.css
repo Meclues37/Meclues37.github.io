@@ -407,3 +407,162 @@ footer {
   text-decoration: none !important;
   display: block;
 }
+/* =========================
+   PLACE PAGE STYLE
+   Cancun / Tibet Matching
+========================= */
+
+.place-page {
+  margin: 0;
+  background: #080806;
+  color: #f4e6c8;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.place-hero {
+  height: 82vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.place-hero-overlay {
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.65),
+    rgba(8,8,6,1)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 9%;
+}
+
+.place-kicker {
+  color: #d99a24;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.place-hero h1 {
+  font-size: 86px;
+  margin: 0;
+  color: #f6dfb5;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.place-subtitle {
+  max-width: 620px;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-top: 18px;
+  color: #ead8b5;
+}
+
+.place-content {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 70px 24px 90px;
+}
+
+.travel-notes {
+  max-width: 780px;
+  margin-bottom: 70px;
+}
+
+.section-label {
+  color: #d99a24;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.travel-notes h2,
+.photo-section h2 {
+  font-size: 38px;
+  font-weight: 400;
+  margin: 0 0 20px;
+  color: #f6dfb5;
+}
+
+.travel-notes p:last-child {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #ddcba8;
+}
+
+.photo-grid-horizontal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+  margin-top: 30px;
+}
+
+.photo-grid-horizontal img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.45);
+}
+
+.photo-grid-vertical {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 390px));
+  justify-content: center;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.photo-grid-vertical img {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.45);
+}
+
+.back-link {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.back-link a {
+  color: #d99a24;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.back-link a:hover {
+  color: #f6dfb5;
+}
+
+@media (max-width: 768px) {
+  .place-hero h1 {
+    font-size: 54px;
+  }
+
+  .place-subtitle {
+    font-size: 18px;
+  }
+
+  .photo-grid-horizontal {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-grid-vertical {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
