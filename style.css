@@ -689,3 +689,29 @@ footer {
     font-size: 14px;
   }
 }
+
+.trail-index-card {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at top left, rgba(217,154,36,0.22), transparent 35%),
+    linear-gradient(135deg, #181818, #080806);
+}
+
+.trail-index-card a {
+  width: 100%;
+  height: 100%;
+}
+
+.trail-index-card div {
+  padding: 34px;
+}
+
+.trail-index-card h3 {
+  color: #f6dfb5;
+}
+
+.trail-index-card p {
+  color: #d8c39a;
+}
