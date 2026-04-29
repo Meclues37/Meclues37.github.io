@@ -27,6 +27,42 @@ body {
   background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(12px);
 }
+.like-section {
+  text-align: center;
+  padding: 90px 7%;
+}
+
+.like-section h2 {
+  font-size: 38px;
+  color: #f6dfb5;
+  margin-bottom: 14px;
+  font-weight: 400;
+}
+
+.like-section p {
+  color: #d8c39a;
+  margin-bottom: 28px;
+}
+
+.like-button {
+  padding: 16px 34px;
+  border-radius: 999px;
+  border: 1px solid rgba(217,154,36,0.45);
+  background: rgba(255,255,255,0.03);
+  color: #f6dfb5;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.like-button:hover {
+  transform: translateY(-3px);
+  background: rgba(217,154,36,0.10);
+}
+
+.like-button.liked {
+  opacity: 0.6;
+}
 
 .logo {
   font-size: 22px;
