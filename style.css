@@ -774,3 +774,67 @@ footer {
   color: #d8c39a;
   line-height: 1.7;
 }
+
+/* =========================
+   WHERE TO NEXT SECTION
+========================= */
+
+.next-section {
+  background: #080806;
+  color: #f4e6c8;
+}
+
+.next-intro {
+  max-width: 760px;
+  color: #ddcba8;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 42px;
+}
+
+.next-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.next-card {
+  min-height: 280px;
+  padding: 34px;
+  border: 1px solid rgba(217,154,36,0.26);
+  background:
+    radial-gradient(circle at top left, rgba(217,154,36,0.16), transparent 34%),
+    linear-gradient(145deg, #181818, #090806);
+  transition: 0.35s;
+}
+
+.next-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 22px 45px rgba(0,0,0,0.38);
+}
+
+.next-kicker {
+  color: #d99a24;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.next-card h3 {
+  font-size: 34px;
+  font-weight: 400;
+  color: #f6dfb5;
+  margin-bottom: 16px;
+}
+
+.next-card p {
+  color: #d8c39a;
+  line-height: 1.7;
+}
+
+@media (max-width: 850px) {
+  .next-grid {
+    grid-template-columns: 1fr;
+  }
+}
