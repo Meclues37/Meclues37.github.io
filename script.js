@@ -61,10 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* LIGHTBOX */
-  const images = document.querySelectorAll(
-    ".photo-card img, .photo-grid-horizontal img, .photo-grid-vertical img, .cancun-gallery img, .magazine-gallery img"
-  );
-
+ const images = document.querySelectorAll(
+  ".photo-section img, .photo-grid-horizontal img, .photo-grid-vertical img, .cancun-gallery img, .loscabos-gallery img"
+);
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightboxImg");
   const closeBtn = document.querySelector(".lightbox-close");
