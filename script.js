@@ -59,7 +59,7 @@ if (likeBtn && likeCount) {
 
 // LIGHTBOX
 
-const images = document.querySelectorAll("img");
+const images = document.querySelectorAll(".photo-grid-horizontal img, .photo-grid-vertical img, .cancun-gallery img");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");
 const closeBtn = document.querySelector(".lightbox-close");
