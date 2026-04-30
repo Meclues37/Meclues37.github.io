@@ -838,3 +838,35 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* LIGHTBOX */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox img {
+  max-width: 92%;
+  max-height: 92%;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 36px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.lightbox-close:hover {
+  opacity: 1;
+}
