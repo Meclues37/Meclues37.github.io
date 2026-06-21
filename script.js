@@ -9,6 +9,26 @@ import {
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Photography portfolio loaded.");
 
+  /* MOBILE NAVIGATION */
+  const navbar = document.querySelector(".navbar");
+  const navToggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelectorAll("#primary-nav a");
+
+  if (navbar && navToggle) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = navbar.classList.toggle("nav-open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+      navToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navbar.classList.remove("nav-open");
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.setAttribute("aria-label", "Open navigation");
+      });
+    });
+  }
   /* CARD CURSOR */
   const cards = document.querySelectorAll(".photo-card, .place-card");
 
