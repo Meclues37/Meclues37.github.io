@@ -1,0 +1,53 @@
+.language-switcher {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 10000;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 15px;
+  border: 1px solid rgba(217, 154, 36, 0.55);
+  border-radius: 999px;
+  background: rgba(8, 8, 6, 0.88);
+  color: #f6dfb5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  font: 600 14px/1 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.04em;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.language-switcher:hover {
+  transform: translateY(-2px);
+  background: rgba(30, 26, 18, 0.96);
+}
+
+.language-switcher:focus-visible {
+  outline: 2px solid #f6dfb5;
+  outline-offset: 3px;
+}
+
+.language-switcher__icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+html[lang="zh-CN"] body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC",
+    Arial, sans-serif;
+}
+
+html[lang="zh-CN"] .place-page {
+  font-family: "Noto Serif CJK SC", "Songti SC", SimSun, Georgia, serif;
+}
+
+@media (max-width: 600px) {
+  .language-switcher {
+    right: 14px;
+    bottom: 14px;
+    padding: 10px 13px;
+  }
+}
