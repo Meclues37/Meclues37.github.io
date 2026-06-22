@@ -234,6 +234,7 @@ const translations = {
   "Estimated 6–8 km": "约 6–8 公里",
   "Estimated 150–250 m": "约 150–250 米",
   "Old Rag Trail": "Old Rag 路线",
+  "Shenandoah National Park": "仙纳度国家公园",
   "The Narrows": "窄谷",
   "Delicate Arch": "精致拱门",
   "Tunnel Creek Trail, Lake Tahoe": "太浩湖 Tunnel Creek 路线",
@@ -314,7 +315,6 @@ function collectTranslatableContent() {
 function applyLanguage(language) {
   const useChinese = language === "zh";
 
-  originalText.forEach?.(() => {});
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   let node;
   while ((node = walker.nextNode())) {
