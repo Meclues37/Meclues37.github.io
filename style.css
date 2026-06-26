@@ -14,6 +14,42 @@ body {
   color: #f5f1ea;
 }
 
+.top-back-link {
+  position: fixed;
+  top: 22px;
+  left: 22px;
+  z-index: 10000;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border: 1px solid rgba(246, 223, 181, 0.38);
+  border-radius: 999px;
+  color: #f6dfb5;
+  background: rgba(8, 8, 6, 0.58);
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.top-back-link:hover {
+  transform: translateY(-2px);
+  color: #fff3d8;
+  background: rgba(8, 8, 6, 0.78);
+}
+
+@media (max-width: 850px) {
+  .top-back-link {
+    top: 16px;
+    left: 16px;
+    padding: 9px 13px;
+    font-size: 13px;
+  }
+}
+
 /* NAVBAR */
 .navbar {
   position: fixed;
