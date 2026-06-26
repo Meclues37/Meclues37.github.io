@@ -278,9 +278,21 @@ const originalAttributes = new WeakMap();
 
 function normalize(value) {
   return value
+    .replace(/鈥檚/g, "s")
+    .replace(/鈥檝e/g, "ve")
+    .replace(/鈥檓/g, "m")
+    .replace(/鈥檛/g, "t")
+    .replace(/鈥檒l/g, "ll")
+    .replace(/鈥攚/g, "w")
+    .replace(/鈥攁/g, "a")
+    .replace(/鈥攂/g, "b")
+    .replace(/鈥攑/g, "p")
+    .replace(/鈥攕/g, "s")
+    .replace(/鈥[?？]?/g, " ")
     .replace(/[\u2018\u2019']/g, "")
     .replace(/[\u201c\u201d"]/g, "")
-    .replace(/[\u2013\u2014\ufffd?]+/g, " ")
+    .replace(/[?？\ufffd]+/g, "")
+    .replace(/[\u2013\u2014]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
