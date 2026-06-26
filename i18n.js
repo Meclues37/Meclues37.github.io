@@ -277,7 +277,12 @@ const originalText = new WeakMap();
 const originalAttributes = new WeakMap();
 
 function normalize(value) {
-  return value.replace(/\s+/g, " ").trim();
+  return value
+    .replace(/[\u2018\u2019']/g, "")
+    .replace(/[\u201c\u201d"]/g, "")
+    .replace(/[\u2013\u2014\ufffd?]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function translated(value) {
