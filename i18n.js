@@ -346,6 +346,71 @@ function collectTranslatableContent() {
 }
 
 
+
+const pageTravelNotes = {
+  "tibet.html": [
+    "那个夏天，我和 Cici、朋友 Lucas 一起去了西藏。一路景色壮丽，天空低得仿佛伸手就能触碰。",
+    "我们在珠穆朗玛峰看见金色落日，那一幕注定会伴随我一生。虽然严重的高原反应让我身体像在地狱，精神却仿佛身处天堂。"
+  ],
+  "yosemite.html": [
+    "这是一次和 Cici、Lucas、Mike、Jolin、Randy 一起的轻松旅行。我们住进了体验最棒的 Airbnb 之一：一栋带泳池和花园的大房子，氛围格外温馨。",
+    "夜晚属于扑克、桌游和几杯小酒。另一天，我们走完一条徒步路线，并以一座壮观瀑布作为旅程的收尾。"
+  ],
+  "laketahoe.html": [
+    "太浩湖总给人清澈、平静又舒爽的感觉。湛蓝湖水与群山，让沿途每一次停留都变得特别。",
+    "我们在两天里分别走了两条路线，沿途风景都很惊艳。第二次徒步尤其难忘：返程时太阳已经开始下山，天色渐暗让我们越来越紧张。最后大家慌乱又疲惫地赶回去，却也因此留下了旅途中最深刻的回忆之一。"
+  ],
+  "seattle.html": [
+    "这次旅程包括奥林匹克国家公园和雷尼尔山国家公园。我们在两处都走了很美的徒步路线，既有震撼风景，也夹杂着一点小小的惊险。",
+    "开往奥林匹克国家公园的路上，我们甚至遭遇了爆胎，让旅程又多了一项挑战。这趟旅行充满意外，也有一些困难，但更多的是快乐。"
+  ],
+  "joshuatree.html": [
+    "深夜，我们开进约书亚树国家公园腹地，站在令人难以置信的星空下。一颗彗星从头顶划过，像是小小的幸运预兆，希望它能为我们带来一整年的好运。",
+    "回到 Airbnb 后，我们一起吃烧烤，度过了温馨的沙漠之夜。第二天还走了一条沙漠路线，虽然疲惫，却一路穿过干燥光线、开阔土地与公园安静的节奏。"
+  ],
+  "greatcrossing.html": [
+    "这是一场从尔湾到纽约的十天自驾，最初只是为了把我的行李从 UCI 搬到哥伦比亚大学。但在某段公路上，它早已不再只是一场搬家。",
+    "我们穿越沙漠、群山、平原与城市，途经锡安、拱门、拉斯维加斯、猛犸洞、圣路易斯、堪萨斯城，以及沿途许多地方。",
+    "最难忘的时刻许多都来自徒步：在锡安的窄谷涉水前行、探索猛犸洞的地下世界，以及在犹他辽阔天空下抵达精致拱门。与其说这是旅行，不如说是一场盛大的美国横穿。"
+  ],
+  "loscabos.html": [
+    "大学三年级时，我们临时决定逃去洛斯卡沃斯度过一个周末，把校园里的截止日期与压力暂时留在身后，换来几天明亮的阳光。",
+    "我们翘了几节课——准确地说，只有 Cici 翘了——然后投入海岸缓慢的节奏：乘船划过清澈海水、入住舒适酒店、品尝格外新鲜的海鲜。这是一场优雅又无忧的短途假日，也正是忙碌学年中我们需要的充电。"
+  ],
+  "yunnan.html": [
+    "我们去云南度过暑假，身边是仍覆着白雪的群山，以及泛着柔和波纹的湖泊。风景开阔、明亮又平静，那份清新让整趟旅程仿佛远离了日常生活。",
+    "这也是我第一次和 Cici 的朋友们一起旅行，让旅途更加热闹难忘。山景、湖风与一路共享的时光，让云南成为一段温暖而美好的夏日记忆。"
+  ],
+  "sandiego.html": [
+    "我们去了圣地亚哥，探访许多人心中世界最棒的动物园：圣地亚哥动物园和野生动物园。我们在动物、开阔景观与公园活泼的氛围中度过了非常快乐的一天。",
+    "我们还沿着海岸开车，海狮懒洋洋地躺在沙滩上，夜风轻轻吹过。最重要的是，这是我和 Cici 两个人的第一次自驾，也让我们有信心去想象未来开往更远的地方。"
+  ],
+  "baltimore.html": [
+    "我们周末去了巴尔的摩，让 Cici 探望她在 UCI 最好的朋友 Jolin。这也是我第一次同时为两个人拍人像，既有挑战，也非常有趣。柔和的樱花包围着我们，整个下午明亮、温柔，充满春天的气息。",
+    "之后，我们前往仙纳度国家公园，完成了高难度的 Old Rag Trail。这是我们第一次走完这种级别的路线，在岩石间攀爬确实非常好玩。不过后半段下山，与其说是徒步，不如说是和膝盖进行了一场漫长谈判。",
+    "最终让我们抵达终点的，大概是坚持，以及一点害怕日落后被困在山上的紧张。无论如何，Old Rag 成了一段疲惫却难忘的记忆，也让我们在结束后觉得自己更强大了。"
+  ],
+  "cruise.html": [
+    "我们从迈阿密出发，开始了一场前往巴哈马的五天邮轮之旅，很快便进入无比放松的节奏：自助餐、无限鸡尾酒，还有和朋友们一起玩的桌游。阿瓦隆成了每晚的固定节目，通常玩到大家早就不该再相信彼此的时候。",
+    "我们在 Ocean Cay 停留了两天，这座美丽小岛被透明的加勒比蓝环绕。大家一起游泳、跳水，笑到筋疲力尽。强风让桨板和皮划艇只能留在岸上，这是唯一的遗憾，不过海水实在太诱人，那点遗憾也很快被忘掉了。",
+    "阳光也留下了它的纪念品：第一个海岛日后我晒伤了，还有一位朋友红得惊人，甚至有点好笑。邮轮回到迈阿密后，我们又把旅程延长了一点，去了大沼泽地国家公园，幸运地看见两只短吻鳄和许多其他野生动物。",
+    "这是一场不慌不忙的旅行，装满了简单的快乐：海风、游戏、饮料、清澈海水，还有很好的朋友。我很愿意再来一次，也许我已经有点爱上加勒比海了。"
+  ]
+};
+
+function translatePageTravelNotes(useChinese) {
+  const page = location.pathname.split("/").pop() || "index.html";
+  const notes = pageTravelNotes[page];
+  if (!notes) return;
+
+  document.querySelectorAll(".travel-notes p").forEach((element, index) => {
+    if (!element.dataset.englishText) {
+      element.dataset.englishText = normalize(element.textContent || "");
+    }
+    element.textContent = useChinese ? notes[index] || element.textContent : element.dataset.englishText;
+  });
+}
+
 function translateTravelNoteBlocks(useChinese) {
   document.querySelectorAll(".travel-notes p, .travel-notes h2, .trail-awards p").forEach(element => {
     if (!element.dataset.englishText) {
@@ -392,6 +457,7 @@ function applyLanguage(language) {
   document.documentElement.dataset.language = language;
 
   translateTravelNoteBlocks(useChinese);
+  translatePageTravelNotes(useChinese);
 
   const switcher = document.querySelector(".language-switcher");
   if (switcher) {
