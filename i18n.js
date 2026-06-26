@@ -203,6 +203,15 @@ const translations = {
   "Everglades Epilogue": "大沼泽地尾声",
   "One More Wild Stop": "最后一站：野性自然",
 
+  // Live punctuation fallback mappings
+  "We saw a golden sunset at Mt. Everest, a memory that will never leave me for the rest of my life. I suffered from severe high-altitude sickness ? body in hell, mind in heaven.": "我们在珠穆朗玛峰看见金色落日，那一幕注定会伴随我一生。虽然严重的高原反应让我身体像在地狱，精神却仿佛身处天堂。",
+  "A relaxing trip with Cici, Lucas, Mike, Jolin, and Randy. We stayed in one of the best Airbnbs ever ? a huge house with a pool, garden, and an incredibly cozy atmosphere.": "这是一次和 Cici、Lucas、Mike、Jolin、Randy 一起的轻松旅行。我们住进了体验最棒的 Airbnb 之一：一栋带泳池和花园的大房子，氛围格外温馨。",
+  "We skipped a few classes?well, to be accurate, only Cici did?and embraced the slower rhythm of the coast with boat rides across clear waters, a luxurious hotel stay, and exceptionally fresh seafood by the sea. It was an elegant, carefree getaway, and exactly the kind of recharge we needed in the middle of a demanding year.": "我们翘了几节课——准确地说，只有 Cici 翘了——然后投入海岸缓慢的节奏：乘船划过清澈海水、入住舒适酒店、品尝格外新鲜的海鲜。这是一场优雅又无忧的短途假日，也正是忙碌学年中我们需要的充电。",
+  "It was also my first time traveling with Cici?s friends, which made the journey feel more lively and memorable. Between the mountain views, lake breeze, and shared moments along the way, Yunnan became a warm and beautiful summer memory.": "这也是我第一次和 Cici 的朋友们一起旅行，让旅途更加热闹难忘。山景、湖风与一路共享的时光，让云南成为一段温暖而美好的夏日记忆。",
+  "We went to San Diego and visited what many call the world?s best zoo?both the main San Diego Zoo and the Safari Park. We had an amazing time there, spending the day among animals, open landscapes, and the playful energy of the park.": "我们去了圣地亚哥，探访许多人心中世界最棒的动物园：圣地亚哥动物园和野生动物园。我们在动物、开阔景观与公园活泼的氛围中度过了非常快乐的一天。",
+  "In the end, it was probably our persistence that got us to the finish?plus a little fear of being stuck on the mountain after sunset. Either way, Old Rag became one of those exhausting but unforgettable memories that made us feel stronger afterward.": "最终让我们抵达终点的，大概是坚持，以及一点害怕日落后被困在山上的紧张。无论如何，Old Rag 成了一段疲惫却难忘的记忆，也让我们在结束后觉得自己更强大了。",
+  "We spent two days at Ocean Cay, a beautiful island surrounded by transparent Caribbean blue. We swam and dove into the water with friends, laughing until we were exhausted. Heavy wind kept the paddleboards and kayaks on shore, which was our one regret?but the water was so inviting that it hardly mattered.": "我们在 Ocean Cay 停留了两天，这座美丽小岛被透明的加勒比蓝环绕。大家一起游泳、跳水，笑到筋疲力尽。强风让桨板和皮划艇只能留在岸上，这是唯一的遗憾，不过海水实在太诱人，那点遗憾也很快被忘掉了。",
+
   // Trail logbook
   "Trail Logbook | Our Travel Footprints": "徒步日志 | 我们的旅行足迹",
   "Outdoor Archive": "户外档案",
