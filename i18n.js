@@ -214,6 +214,12 @@ const translations = {
   "Longest Trail": "最长路线",
   "Highlights": "亮点",
   "Favorite Records": "最喜欢的纪录",
+  "Hardest Trail: Old Rag Trail": "最难路线：Old Rag Trail",
+  "Favorite Trail: The Narrows": "最喜欢的路线：The Narrows",
+  "Most Beautiful View: Delicate Arch": "最美景色：Delicate Arch",
+  "Most Painful Descent: Old Rag Trail": "最痛苦的下山：Old Rag Trail",
+  "Most Romantic Walk: Tunnel Creek Trail, Lake Tahoe": "最浪漫的徒步：太浩湖 Tunnel Creek Trail",
+  "Most Memorable Nature Moment: Seeing deer, squirrels, and many birds on Old Rag": "最难忘的自然瞬间：在 Old Rag 看见鹿、松鼠和许多鸟",
   "Hardest Trail:": "最难路线：",
   "Favorite Trail:": "最喜欢的路线：",
   "Most Beautiful View:": "最美景色：",
@@ -313,6 +319,20 @@ function collectTranslatableContent() {
   });
 }
 
+
+function translateTravelNoteBlocks(useChinese) {
+  document.querySelectorAll(".travel-notes p, .travel-notes h2, .trail-awards p").forEach(element => {
+    if (!element.dataset.englishText) {
+      element.dataset.englishText = normalize(element.textContent || "");
+    }
+    const english = element.dataset.englishText;
+    const chinese = translated(english);
+    if (chinese) {
+      element.textContent = useChinese ? chinese : english;
+    }
+  });
+}
+
 function applyLanguage(language) {
   const useChinese = language === "zh";
 
@@ -344,6 +364,8 @@ function applyLanguage(language) {
 
   document.documentElement.lang = useChinese ? "zh-CN" : "en";
   document.documentElement.dataset.language = language;
+
+  translateTravelNoteBlocks(useChinese);
 
   const switcher = document.querySelector(".language-switcher");
   if (switcher) {
