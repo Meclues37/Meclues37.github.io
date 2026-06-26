@@ -403,7 +403,7 @@ function translatePageTravelNotes(useChinese) {
   const notes = pageTravelNotes[page];
   if (!notes) return;
 
-  document.querySelectorAll(".travel-notes p").forEach((element, index) => {
+  document.querySelectorAll(".travel-notes p:not(.section-label)").forEach((element, index) => {
     if (!element.dataset.englishText) {
       element.dataset.englishText = normalize(element.textContent || "");
     }
