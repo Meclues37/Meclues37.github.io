@@ -272,6 +272,12 @@ const translations = {
   "Upper Yosemite Falls Trail": "上优胜美地瀑布路线",
   "Yosemite National Park": "优胜美地国家公园",
   "Delicate Arch Trail": "精致拱门路线",
+  "Highest Elevation": "最高海拔",
+  "Damian Mountain": "大面山",
+  "Guilin, Guangxi, China": "中国广西桂林",
+  "≈ 5 km round trip": "约 5 km（往返）",
+  "≈ 500 m": "约 500 m",
+  "—": "—",
   "Arches National Park": "拱门国家公园"
 };
 
