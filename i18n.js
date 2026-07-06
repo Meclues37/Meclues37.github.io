@@ -277,7 +277,6 @@ const translations = {
   "Guilin, Guangxi, China": "中国广西桂林",
   "≈ 5 km round trip": "约 5 km（往返）",
   "≈ 500 m": "约 500 m",
-  "—": "—",
   "Arches National Park": "拱门国家公园"
 };
 
@@ -313,7 +312,9 @@ function normalize(value) {
 }
 
 function translated(value) {
-  return normalizedTranslations.get(normalize(value));
+  const key = normalize(value);
+  if (!key) return undefined;
+  return normalizedTranslations.get(key);
 }
 
 function preserveSpacing(original, replacement) {
