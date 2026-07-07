@@ -216,6 +216,26 @@ const translations = {
   "Everglades Epilogue": "\u5927\u6cbc\u6cfd\u5730\u5c3e\u58f0",
   "One More Wild Stop": "\u6700\u540e\u4e00\u7ad9\uff1a\u91ce\u6027\u81ea\u7136",
 
+  // Grouped destination galleries
+  "High Roads": "\u9ad8\u539f\u4e4b\u8def",
+  "Sky, Mountains, and Distance": "\u5929\u7a7a\u3001\u7fa4\u5c71\u4e0e\u8fdc\u65b9",
+  "Everest Light": "\u73e0\u5cf0\u4e4b\u5149",
+  "Gold Near the Highest Place": "\u6700\u9ad8\u5904\u9644\u8fd1\u7684\u91d1\u8272\u5149\u7ebf",
+  "Quiet Details": "\u5b89\u9759\u7ec6\u8282",
+  "Small Moments at Altitude": "\u9ad8\u6d77\u62d4\u91cc\u7684\u5c0f\u77ac\u95f4",
+  "National Parks": "\u56fd\u5bb6\u516c\u56ed",
+  "Olympic and Rainier Days": "\u5965\u6797\u5339\u514b\u4e0e\u96f7\u5c3c\u5c14\u5c71\u7684\u65e5\u5b50",
+  "Northwest Mood": "\u897f\u5317\u6c1b\u56f4",
+  "One Quiet Frame": "\u4e00\u4e2a\u5b89\u9759\u753b\u9762",
+  "Mountains and Lakes": "\u96ea\u5c71\u4e0e\u6e56\u6cca",
+  "Open Summer Light": "\u5f00\u9614\u7684\u590f\u65e5\u5149\u7ebf",
+  "Friends on the Road": "\u8def\u4e0a\u7684\u670b\u53cb\u4eec",
+  "Warm Travel Portraits": "\u6e29\u6696\u7684\u65c5\u884c\u4eba\u50cf",
+  "Sakura Afternoon": "\u6a31\u82b1\u4e0b\u5348",
+  "Portraits in Baltimore": "\u5df4\u5c14\u7684\u6469\u7684\u4eba\u50cf",
+  "Old Rag Trail": "Old Rag Trail",
+  "Rocks, Knees, and Sunset Pressure": "\u5ca9\u77f3\u3001\u819d\u76d6\u4e0e\u65e5\u843d\u538b\u529b",
+
   // Live punctuation fallback mappings
   "We saw a golden sunset at Mt. Everest, a memory that will never leave me for the rest of my life. I suffered from severe high-altitude sickness ? body in hell, mind in heaven.": "\u6211\u4eec\u5728\u73e0\u7a46\u6717\u739b\u5cf0\u770b\u89c1\u91d1\u8272\u843d\u65e5\uff0c\u90a3\u4e00\u5e55\u6ce8\u5b9a\u4f1a\u4f34\u968f\u6211\u4e00\u751f\u3002\u867d\u7136\u4e25\u91cd\u7684\u9ad8\u539f\u53cd\u5e94\u8ba9\u6211\u8eab\u4f53\u50cf\u5728\u5730\u72f1\uff0c\u7cbe\u795e\u5374\u4eff\u4f5b\u8eab\u5904\u5929\u5802\u3002",
   "A relaxing trip with Cici, Lucas, Mike, Jolin, and Randy. We stayed in one of the best Airbnbs ever ? a huge house with a pool, garden, and an incredibly cozy atmosphere.": "\u8fd9\u662f\u4e00\u6b21\u548c Cici\u3001Lucas\u3001Mike\u3001Jolin\u3001Randy \u4e00\u8d77\u7684\u8f7b\u677e\u65c5\u884c\u3002\u6211\u4eec\u4f4f\u8fdb\u4e86\u4f53\u9a8c\u6700\u68d2\u7684 Airbnb \u4e4b\u4e00\uff1a\u4e00\u680b\u5e26\u6cf3\u6c60\u548c\u82b1\u56ed\u7684\u5927\u623f\u5b50\uff0c\u6c1b\u56f4\u683c\u5916\u6e29\u99a8\u3002",
