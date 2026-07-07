@@ -13,8 +13,8 @@ const translations = {
   "Gallery": "??",
   "Route": "??",
   "Back to Travel Map": "??????",
-  "? Back to Travel Map": "? ??????",
-  "? Back": "? ??",
+  "\u2190 Back to Travel Map": "\u2190 ??????",
+  "\u2190 Back": "\u2190 ??",
   "Full size photo": "????",
 
   // Homepage
@@ -482,12 +482,12 @@ function applyLanguage(language) {
   const switcher = document.querySelector(".language-switcher");
   if (switcher) {
     switcher.querySelector(".language-switcher__label").textContent =
-      useChinese ? "EN" : "??";
+      useChinese ? "EN" : "\u4e2d\u6587";
     switcher.setAttribute(
       "aria-label",
-      useChinese ? "Switch to English" : "?????"
+      useChinese ? "Switch to English" : "\u5207\u6362\u4e3a\u4e2d\u6587"
     );
-    switcher.title = useChinese ? "Switch to English" : "?????";
+    switcher.title = useChinese ? "Switch to English" : "\u5207\u6362\u4e3a\u4e2d\u6587";
   }
 }
 
@@ -496,8 +496,8 @@ function createSwitcher() {
   button.type = "button";
   button.className = "language-switcher";
   button.innerHTML = `
-    <span class="language-switcher__icon" aria-hidden="true">??</span>
-    <span class="language-switcher__label">??</span>
+    <span class="language-switcher__icon" aria-hidden="true">&#127760;</span>
+    <span class="language-switcher__label">&#20013;&#25991;</span>
   `;
   button.addEventListener("click", () => {
     const next =
