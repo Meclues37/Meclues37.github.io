@@ -38,6 +38,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  /* FEATURED EDITORIAL ROTATION */
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll(".featured-rotator").forEach((card, cardIndex) => {
+      const slides = card.dataset.rotation.split("|");
+      const image = card.querySelector("img");
+      slides.slice(1).forEach(src => { const preload = new Image(); preload.src = src; });
+      let index = 0;
+      let paused = false;
+
+      card.addEventListener("mouseenter", () => { paused = true; });
+      card.addEventListener("mouseleave", () => { paused = false; });
+      window.setInterval(() => {
+        if (paused) return;
+        image.classList.add("is-fading");
+        window.setTimeout(() => {
+          index = (index + 1) % slides.length;
+          image.src = slides[index];
+          image.classList.remove("is-fading");
+        }, 700);
+      }, 7200 + cardIndex * 900);
+    });
+  }
+
   /* FIREBASE LIKE BUTTON */
   const firebaseConfig = {
     apiKey: "AIzaSyDxz6MLWVbtuCPnLPDA1V1X9UB-YMb1jx0",

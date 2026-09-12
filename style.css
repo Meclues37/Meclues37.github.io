@@ -243,6 +243,14 @@ h1 {
   transform: scale(1.05);
 }
 
+.featured-rotator img {
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.featured-rotator img.is-fading {
+  opacity: 0;
+}
+
 .card-text {
   position: absolute;
   left: 24px;
@@ -932,6 +940,12 @@ footer {
 
   .pengy-copy h3 {
     font-size: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .featured-rotator img {
+    transition: none;
   }
 }
 
