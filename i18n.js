@@ -39,7 +39,7 @@ const translations = {
   "Selected Work": "\u7cbe\u9009\u4f5c\u54c1",
   "Featured Moments": "\u7cbe\u9009\u77ac\u95f4",
   "Selected Frame": "\u7cbe\u9009\u753b\u9762",
-  "The Long View": "\u8fdc\u65b9\u7684\u89c6\u91ce",
+  "Elsewhere": "\u5f02\u4e61\u4e4b\u5916",
   "A selection of photographs from the road.": "\u4ece\u65c5\u9014\u4e2d\u7cbe\u9009\u7684\u6536\u85cf\u3002",
   "Yosemite": "\u4f18\u80dc\u7f8e\u5730",
   "Morning light touching the granite valley walls.": "\u6668\u5149\u8f7b\u8f7b\u843d\u5728\u82b1\u5c97\u5ca9\u5c71\u8c37\u7684\u5ced\u58c1\u4e0a\u3002",
