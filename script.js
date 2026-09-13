@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const frames = [
       "yosemite_revised_1.jpg", "yellowstone/yellowstone-4931.jpg",
       "guilin/guilin-da-mian-shan-hero.jpg", "spain-portugal/spain-portugal-hero-casa-batllo-courtyard.jpg",
-      "yellowstone/yellowstone-5305-2.jpg", "JNP1.JPG"
+      "yellowstone/yellowstone-5305-2.jpg", "JNP1.JPG", "tahoe1.JPG", "Tibet1.jpg",
+      "yunnan1.jpg", "cruise-lighthouse.jpg"
     ].map(path => `https://meclues37-photo-1447476321.cos.ap-hongkong.myqcloud.com/images/${path}`);
     const image = reel.querySelector(".cinematic-reel__image");
     const count = reel.querySelector(".cinematic-reel__count b");
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         count.textContent = String(current + 1).padStart(2, "0");
         reel.classList.remove("is-transitioning");
       }, 750);
-    }, 8500);
+    }, 7000);
   }
 
   /* FIREBASE LIKE BUTTON */
