@@ -38,31 +38,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* FEATURED EDITORIAL SPREAD */
-  const editorial = document.getElementById("featuredEditorial");
-  if (editorial && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    const sets = [
-      ["yosemite_revised_1.jpg", "tahoe1.JPG", "JNP1.JPG"],
-      ["yellowstone/yellowstone-4931.jpg", "spain-portugal/spain-portugal-hero-casa-batllo-courtyard.jpg", "cruise-lighthouse.jpg"],
-      ["guilin/guilin-da-mian-shan-hero.jpg", "yellowstone/yellowstone-5305-2.jpg", "yunnan1.jpg"]
-    ].map(set => set.map(path => `https://meclues37-photo-1447476321.cos.ap-hongkong.myqcloud.com/images/${path}`));
-    const slots = ["main", "side-one", "side-two"].map(name => editorial.querySelector(`[data-editorial-image="${name}"]`));
-    const count = editorial.querySelector(".editorial-count b");
-    sets.flat().slice(3).forEach(src => { const preload = new Image(); preload.src = src; });
+  /* FEATURED CINEMATIC REEL */
+  const reel = document.getElementById("cinematicReel");
+  if (reel && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const frames = [
+      "yosemite_revised_1.jpg", "yellowstone/yellowstone-4931.jpg",
+      "guilin/guilin-da-mian-shan-hero.jpg", "spain-portugal/spain-portugal-hero-casa-batllo-courtyard.jpg",
+      "yellowstone/yellowstone-5305-2.jpg", "JNP1.JPG"
+    ].map(path => `https://meclues37-photo-1447476321.cos.ap-hongkong.myqcloud.com/images/${path}`);
+    const image = reel.querySelector(".cinematic-reel__image");
+    const count = reel.querySelector(".cinematic-reel__count b");
+    frames.slice(1).forEach(src => { const preload = new Image(); preload.src = src; });
     let current = 0;
     let paused = false;
-    editorial.addEventListener("mouseenter", () => { paused = true; });
-    editorial.addEventListener("mouseleave", () => { paused = false; });
+    reel.addEventListener("mouseenter", () => { paused = true; });
+    reel.addEventListener("mouseleave", () => { paused = false; });
     window.setInterval(() => {
       if (paused) return;
-      editorial.classList.add("is-transitioning");
+      reel.classList.add("is-transitioning");
       window.setTimeout(() => {
-        current = (current + 1) % sets.length;
-        slots.forEach((image, index) => { image.src = sets[current][index]; });
+        current = (current + 1) % frames.length;
+        image.src = frames[current];
         count.textContent = String(current + 1).padStart(2, "0");
-        editorial.dataset.layout = current;
-        editorial.classList.remove("is-transitioning");
-      }, 550);
+        reel.classList.remove("is-transitioning");
+      }, 750);
     }, 8500);
   }
 
