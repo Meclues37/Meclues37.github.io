@@ -301,6 +301,15 @@ h1 {
   border: 1px solid #2a2a2a;
   box-shadow: 0 20px 60px rgba(0,0,0,0.45);
   background: #17130e;
+  overflow: hidden;
+}
+
+.travel-map .leaflet-tile {
+  filter: grayscale(1) brightness(0.46) contrast(1.18);
+}
+
+.travel-map .leaflet-tile-pane {
+  filter: saturate(0.7);
 }
 
 .travel-map .leaflet-popup-content-wrapper,
@@ -325,6 +334,10 @@ h1 {
   color: #e3b768;
 }
 
+.travel-map .leaflet-popup-close-button {
+  color: #f6dfb5 !important;
+}
+
 .travel-map .leaflet-control-attribution {
   background: rgba(13, 13, 13, 0.78);
   color: #cfc7bb;
@@ -338,6 +351,12 @@ h1 {
   background: #17130e;
   border-color: #40372b;
   color: #f6dfb5;
+}
+
+.travel-map .leaflet-bar a:hover,
+.travel-map .leaflet-bar a:focus-visible {
+  background: #2a2218;
+  color: #fff7e8;
 }
 
 @media (max-width: 850px) {

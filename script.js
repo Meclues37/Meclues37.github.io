@@ -70,14 +70,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const mapElement = document.getElementById("travelMap");
   if (mapElement && window.L) {
     const map = L.map(mapElement, { scrollWheelZoom: false }).setView([25, -15], 2);
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       maxZoom: 19
     }).addTo(map);
 
     const pin = L.divIcon({
       className: "",
-      html: '<span style="display:block;width:13px;height:13px;border:2px solid #17130e;border-radius:50%;background:#e3b768;box-shadow:0 0 0 2px rgba(227,183,104,.35)"></span>',
+      html: '<span style="display:block;width:13px;height:13px;border:2px solid #17130e;border-radius:50%;background:#f6dfb5;box-shadow:0 0 0 2px rgba(217,154,36,.55),0 0 16px rgba(217,154,36,.38)"></span>',
       iconSize: [13, 13],
       iconAnchor: [6, 6]
     });
