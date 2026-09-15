@@ -292,7 +292,39 @@ h1 {
   color: #cfc7bb;
   line-height: 1.8;
   font-size: 17px;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: 0 0 30px;
+  color: #ddd6ca;
+  font-size: 14px;
+}
+
+.map-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.map-legend-dot {
+  width: 11px;
+  height: 11px;
+  border: 2px solid #17130e;
+  border-radius: 50%;
+}
+
+.map-legend-dot--cici {
+  background: #f6dfb5;
+  box-shadow: 0 0 0 2px rgba(217,154,36,.55);
+}
+
+.map-legend-dot--solo {
+  background: #9bc7dc;
+  box-shadow: 0 0 0 2px rgba(116,174,201,.55);
 }
 
 .travel-map {
