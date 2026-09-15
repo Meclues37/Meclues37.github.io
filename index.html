@@ -6,6 +6,7 @@
   <title>Yisen Xiong Photography</title>
   <link rel="stylesheet" href="style.css?v=cinematic-reel-2" />
   <link rel="stylesheet" href="i18n.css?v=travel-notes-1" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 
 
@@ -246,12 +247,10 @@
 
     <p class="map-intro">
       Places I have been to with Cici, captured through roads, cities, mountains,
-      coastlines, and quiet shared moments.(locations may not be 100% accurate as I use AI generate this map.)
+      coastlines, and quiet shared moments. Every marker is placed with real geographic coordinates.
     </p>
 
-    <div class="map-poster-wrap">
-      <img loading="lazy" decoding="async" src="https://meclues37-photo-1447476321.cos.ap-hongkong.myqcloud.com/images/map.png" alt="Travel Map" class="map-poster">
-    </div>
+    <div id="travelMap" class="travel-map" role="region" aria-label="Interactive map of travel destinations"></div>
 
   </section>
 
@@ -341,7 +340,8 @@
   <span class="lightbox-close">&times;</span>
   <img class="lightbox-img" id="lightboxImg">
 </div>
-<script type="module" src="script.js?v=cinematic-reel-2"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script type="module" src="script.js?v=accurate-map-1"></script>
 
 <script src="i18n.js?v=cinematic-reel-3"></script>
 </body>

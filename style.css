@@ -295,16 +295,56 @@ h1 {
   margin-bottom: 40px;
 }
 
-.map-poster-wrap {
-  max-width: 1250px;
-  margin: auto;
-}
-
-.map-poster {
-  width: 100%;
-  display: block;
+.travel-map {
+  height: min(68vh, 680px);
+  min-height: 440px;
   border: 1px solid #2a2a2a;
   box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+  background: #17130e;
+}
+
+.travel-map .leaflet-popup-content-wrapper,
+.travel-map .leaflet-popup-tip {
+  background: #17130e;
+  color: #f5f1ea;
+}
+
+.travel-map .leaflet-popup-content {
+  margin: 14px 16px;
+  font: 14px/1.45 Arial, Helvetica, sans-serif;
+}
+
+.travel-map .leaflet-popup-content strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #f6dfb5;
+  font: 500 18px Georgia, 'Times New Roman', serif;
+}
+
+.travel-map .leaflet-popup-content a {
+  color: #e3b768;
+}
+
+.travel-map .leaflet-control-attribution {
+  background: rgba(13, 13, 13, 0.78);
+  color: #cfc7bb;
+}
+
+.travel-map .leaflet-control-attribution a {
+  color: #f6dfb5;
+}
+
+.travel-map .leaflet-bar a {
+  background: #17130e;
+  border-color: #40372b;
+  color: #f6dfb5;
+}
+
+@media (max-width: 850px) {
+  .travel-map {
+    height: 62vh;
+    min-height: 380px;
+  }
 }
 
 /* PLACES */
