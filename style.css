@@ -304,14 +304,6 @@ h1 {
   overflow: hidden;
 }
 
-.travel-map .leaflet-tile {
-  filter: grayscale(1) brightness(0.46) contrast(1.18);
-}
-
-.travel-map .leaflet-tile-pane {
-  filter: saturate(0.7);
-}
-
 .travel-map .leaflet-popup-content-wrapper,
 .travel-map .leaflet-popup-tip {
   background: #17130e;

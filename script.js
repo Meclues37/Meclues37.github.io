@@ -69,15 +69,33 @@ document.addEventListener("DOMContentLoaded", () => {
   /* TRAVEL MAP */
   const mapElement = document.getElementById("travelMap");
   if (mapElement && window.L) {
-    const map = L.map(mapElement, { scrollWheelZoom: false }).setView([25, -15], 2);
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-      maxZoom: 19
+    const map = L.map(mapElement, {
+      scrollWheelZoom: false,
+      worldCopyJump: false,
+      maxBounds: [[-85, -180], [85, 180]],
+      maxBoundsViscosity: 1,
+      minZoom: 2.25,
+      zoomSnap: 0.25
+    }).setView([25, 5], 2.4);
+    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
+      attribution: 'Tiles &copy; Esri',
+      maxZoom: 16,
+      noWrap: true
+    }).addTo(map);
+    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}", {
+      maxZoom: 16,
+      noWrap: true
     }).addTo(map);
 
-    const pin = L.divIcon({
+    const ciciPin = L.divIcon({
       className: "",
       html: '<span style="display:block;width:13px;height:13px;border:2px solid #17130e;border-radius:50%;background:#f6dfb5;box-shadow:0 0 0 2px rgba(217,154,36,.55),0 0 16px rgba(217,154,36,.38)"></span>',
+      iconSize: [13, 13],
+      iconAnchor: [6, 6]
+    });
+    const soloPin = L.divIcon({
+      className: "",
+      html: '<span style="display:block;width:13px;height:13px;border:2px solid #17130e;border-radius:50%;background:#9bc7dc;box-shadow:0 0 0 2px rgba(116,174,201,.55),0 0 16px rgba(116,174,201,.38)"></span>',
       iconSize: [13, 13],
       iconAnchor: [6, 6]
     });
@@ -117,11 +135,29 @@ document.addEventListener("DOMContentLoaded", () => {
       [25.7617, -80.1918, "Miami", "Florida, USA"],
       [38.5655, -78.2936, "Shenandoah", "Old Rag Mountain, Virginia", "baltimore.html"]
     ];
-    destinations.forEach(([lat, lng, title, place, page]) => {
-      L.marker([lat, lng], { icon: pin })
+    const soloDestinations = [
+      [15.8700, 100.9925, "Thailand", "Personal trip"],
+      [64.5000, 11.0000, "Norway", "Personal trip"],
+      [56.2639, 9.5018, "Denmark", "Personal trip"],
+      [46.2276, 2.2137, "France", "Personal trip"],
+      [46.8182, 8.2275, "Switzerland", "Personal trip"],
+      [40.4637, -3.7492, "Spain", "Personal trip"],
+      [39.3999, -8.2245, "Portugal", "Personal trip"],
+      [42.8333, 12.8333, "Italy", "Personal trip"],
+      [36.2048, 138.2529, "Japan", "Personal trip"],
+      [35.9078, 127.7669, "South Korea", "Personal trip"],
+      [39.0742, 21.8243, "Greece", "Personal trip"],
+      [55.3781, -3.4360, "United Kingdom", "Personal trip"],
+      [-25.2744, 133.7751, "Australia", "Personal trip"],
+      [-40.9006, 174.8860, "New Zealand", "Personal trip"]
+    ];
+    const addMarkers = (items, icon) => items.forEach(([lat, lng, title, place, page]) => {
+      L.marker([lat, lng], { icon })
         .bindPopup(`<strong>${title}</strong>${place}${page ? `<br><a href="${page}">Open story</a>` : ""}`)
         .addTo(map);
     });
+    addMarkers(destinations, ciciPin);
+    addMarkers(soloDestinations, soloPin);
   }
 
   /* FIREBASE LIKE BUTTON */
