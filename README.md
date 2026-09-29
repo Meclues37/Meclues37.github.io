@@ -1,41 +1,30 @@
-# 🌍 Yisen Xiong Photography Portfolio
+# Yisen Xiong Photography Portfolio
 
-A personal travel photography portfolio and visual journal, documenting places I’ve visited, moments I’ve captured, and memories shared along the way.
+A refined travel photography portfolio featuring landscapes, destinations, and visual stories from the road.
 
-This project combines photography, storytelling, and structured travel archives into a clean, minimal, and elegant web experience.
+**Live portfolio:** [meclues37.github.io](https://meclues37.github.io/)
 
----
+## About
 
-## ✨ Features
+This project is a personal visual journal of places visited, photographs captured, and memories worth keeping. It brings together travel photography, quiet storytelling, and a growing archive of destinations in a clean, responsive experience.
 
-- 📸 **Travel Pages**
-  - Dedicated pages for each destination
-  - Personal notes + curated photography
+## Highlights
 
-- 🗺 **Travel Footprint Map**
-  - Overview of places visited
+- Destination galleries with curated photographs and personal notes
+- Travel footprint map documenting places visited
+- Trail logbook with routes, distances, elevation, and memories
+- Featured work presented as a cinematic visual reel
+- Responsive dark-luxury interface with English and Chinese support
+- Daily-life collection featuring Pengy, my blue bicolor Ragdoll cat
 
-- 🏔 **Trail Logbook**
-  - Completed hiking trails
-  - Difficulty, distance, elevation
-  - Personal highlights and stats
+## Selected destinations
 
-- 👍 **Global Like Button**
-  - One-like-per-user (browser-based)
-  - Shared global count via Firebase
+Cancún · Tibet · Guilin · Yosemite · Lake Tahoe · Seattle · Joshua Tree · Los Cabos · Yunnan · Spain & Portugal · Yellowstone & Grand Teton · Los Angeles · San Diego
 
-- 🎨 **Custom UI Design**
-  - Dark luxury theme
-  - Clean typography and layout
-  - Responsive design
+## Built with
 
----
+HTML5 · CSS3 · JavaScript ES Modules · Firebase Realtime Database · Leaflet
 
-## 🧱 Tech Stack
+## Purpose
 
-- HTML5
-- CSS3
-- JavaScript (ES Modules)
-- Firebase Realtime Database
-
----
+Photography is a way to preserve the feeling of a place, a day, or a quiet second. This portfolio is an ongoing archive of that practice.
